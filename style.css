@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #0a74da, #005bbb);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 5px solid #ffd700;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.cta-banner {
+  background: #ffdb4d;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 30px 10px;
+}
+
+.cta-banner h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.cta-button {
+  background: #0a74da;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #004ea2;
+}
+
+.cta-button:focus,
+form button:focus {
+  outline: 3px solid #ffd700;
+  outline-offset: 2px;
+}
+
+.intro {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.feature-card {
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 25px;
+  background-color: #0a74da;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #004ea2;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e8f0fe;
+  border-left: 5px solid #0a74da;
+  border-radius: 8px;
+}
+
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+.loan-table th,
+.loan-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.loan-table thead {
+  background-color: #0a74da;
+  color: white;
+}
+
+.loan-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.loan-table tbody tr:hover {
+  background-color: #dbeafe;
+}
+
+.testimonials {
+  background-color: #fafafa;
+  padding: 50px 20px;
+}
+
+.testimonial-card {
+  background: white;
+  border-left: 5px solid #0a74da;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card p {
+  font-style: italic;
+}
+
+.faq {
+  background: #fff;
+  padding: 50px 20px;
+}
+
+.faq ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.faq li {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #0a74da;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fff9b0;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 40px 15px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .cta-banner {
+    padding: 25px 15px;
+  }
+  .cta-banner h2 {
+    font-size: 1.25rem;
+  }
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+  .feature-card {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+  .form-section {
+    padding: 30px 15px;
+  }
+  form label {
+    font-size: 0.95rem;
+  }
+  form input,
+  form select,
+  form button {
+    font-size: 0.95rem;
+  }
+  .result,
+  .testimonial-card,
+  .faq ul,
+  .loan-table {
+    font-size: 0.9rem;
+  }
+  .testimonial-card {
+    padding: 20px;
+  }
+  .faq li {
+    font-size: 0.95rem;
+  }
+  footer {
+    font-size: 0.85rem;
+    padding: 20px 15px;
+  }
+}

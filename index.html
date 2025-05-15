@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebot Paylater</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kebot Paylater</h1>
+      <p>Solusi pinjaman cepat dan mudah, kapan saja kamu butuh.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="cta-banner">
+      <div class="container">
+        <h2>🎉 Dapatkan Pinjaman Instan Hingga Rp 5.000.000!</h2>
+        <p>Tanpa jaminan, tanpa ribet. Yuk mulai sekarang!</p>
+        <a href="#loan-form" class="cta-button">Ajukan Sekarang</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container">
+        <h2>Kenapa Kebot Paylater?</h2>
+        <div class="features">
+          <div class="feature-card">💼 Proses cepat & mudah</div>
+          <div class="feature-card">💰 Bunga rendah & transparan</div>
+          <div class="feature-card">🔒 Aman dan terpercaya</div>
+          <div class="feature-card">📱 Bisa diajukan lewat HP</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <h2>Ajukan Pinjaman</h2>
+        <form id="loan-form">
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="amount">Jumlah Pinjaman (Rp)</label>
+          <input type="number" id="amount" name="amount" required />
+
+          <label for="duration">Durasi (bulan)</label>
+          <select id="duration" name="duration">
+            <option value="1">1 bulan</option>
+            <option value="3">3 bulan</option>
+            <option value="6">6 bulan</option>
+            <option value="12">12 bulan</option>
+          </select>
+
+          <button type="submit">Ajukan Sekarang</button>
+        </form>
+        <div id="result" class="result"></div>
+        <!-- Tombol WhatsApp -->
+<div id="whatsapp-button" style="margin-top: 20px; display: none;">
+  <a href="https://wa.me/6285772586141?text=Halo,%20saya%20sudah%20mengisi%20form%20pinjaman%20di%20Kebot%20Paylater.%20Mohon%20bantuannya." 
+     target="_blank" 
+     class="cta-button">
+    Hubungi via WhatsApp
+  </a>
+</div>
+
+        <h2>Simulasi Cicilan</h2>
+        <table class="loan-table">
+          <thead>
+            <tr>
+              <th>Jumlah Pinjaman</th>
+              <th>Durasi</th>
+              <th>Cicilan Per Bulan</th>
+              <th>Total Pembayaran</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rp 1.000.000</td>
+              <td>3 bulan</td>
+              <td>Rp 433.333</td>
+              <td>Rp 1.300.000</td>
+            </tr>
+            <tr>
+              <td>Rp 2.000.000</td>
+              <td>6 bulan</td>
+              <td>Rp 533.333</td>
+              <td>Rp 3.200.000</td>
+            </tr>
+            <tr>
+              <td>Rp 3.000.000</td>
+              <td>6 bulan</td>
+              <td>Rp 800.000</td>
+              <td>Rp 4.800.000</td>
+            </tr>
+            <tr>
+              <td>Rp 5.000.000</td>
+              <td>12 bulan</td>
+              <td>Rp 918.000</td>
+              <td>Rp 11.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Apa Kata Mereka?</h2>
+        <div class="testimonial-card">
+          <p>"Sangat terbantu saat butuh dana mendesak. Proses cepat dan pelayanannya ramah!"</p>
+          <strong>- Derko, CEO 55FIVE</strong>
+        </div>
+        <div class="testimonial-card">
+          <p>"Awalnya ragu, tapi ternyata mudah banget dan bunganya masuk akal."</p>
+          <strong>- Tolay, Freelancer</strong>
+        <div class="testimonial-card">
+          <p>"Sangat menarik bagi saya dan sangat membantu ketika saya rungkad.</p>
+          <strong>- Partos, Jukir Serius Store</strong>
+        <div class="testimonial-card">
+          <p>"Iseng iseng berhadiah limit langsung tinggi aman dan terpercaya."</p>
+          <strong>- Bayu, Designer</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2>Pertanyaan Umum</h2>
+        <ul>
+          <li><strong>❓ Apakah harus punya jaminan?</strong><br />Tidak. Pinjaman bisa diajukan tanpa jaminan.</li>
+          <li><strong>❓ Berapa lama proses verifikasi?</strong><br />Biasanya hanya butuh waktu 5–15 menit.</li>
+          <li><strong>❓ Apakah data saya aman?</strong><br />Ya. Semua data dijaga dengan sistem keamanan berlapis.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kebot Paylater. Semua hak dilindungi.</p>
+      <p>Hubungi kami: <a href="mailto:support@kebotpaylater.id">support@kebotpaylater.id</a></p>
+      <p>Ikuti kami: 
+        <a href="#">Instagram</a> | 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
