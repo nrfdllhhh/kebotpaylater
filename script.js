@@ -4,9 +4,9 @@ document.getElementById("loan-form").addEventListener("submit", function (e) {
   const name = document.getElementById("name").value;
   const amount = parseFloat(document.getElementById("amount").value);
   const duration = parseInt(document.getElementById("duration").value);
-  const interestRate = 0.10; // 10% flat interest per month
+  const interestRate = 0.10;
 
-  const whatsappNumber = "6281234567890"; // Ganti dengan nomor WhatsApp kamu
+  const whatsappNumber = "6285772586141"; // nomor WhatsApp kamu
 
   if (isNaN(amount) || isNaN(duration) || amount <= 0 || duration <= 0) {
     document.getElementById("result").innerHTML = "<p>Masukkan data yang valid.</p>";
@@ -30,10 +30,8 @@ document.getElementById("loan-form").addEventListener("submit", function (e) {
     </ul>
   `;
 
-  // Buat pesan WA otomatis sesuai data user
   const waMessage = encodeURIComponent(`Halo, saya ${name} sudah mengisi form pinjaman.\nJumlah: Rp ${amount.toLocaleString("id-ID")}\nDurasi: ${duration} bulan\nMohon bantuannya.`);
 
-  // Tampilkan tombol WA dengan link yang benar
   const whatsappBtn = document.getElementById("whatsapp-button");
   whatsappBtn.style.display = "block";
   whatsappBtn.querySelector("a").href = `https://wa.me/${whatsappNumber}?text=${waMessage}`;
